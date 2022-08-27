@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            text-align: left;
+            padding: 18px;
+            width: 40%;
+        }
+
+        tr:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+
+
+        p {
+            font-weight: bold;
+        }
+
+        li {
+            padding: 0.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Document object VS Window object</h1>
+    <table style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">Document object</th>
+            <th style="text-align: center;">Window object</th>
+        </tr>
+        <tr>
+            <td>The document object represent a web page that is loaded in the browser. By accessing the document
+                object, we can access the element in the HTML page. With the help of document objects, we can add
+                dynamic content to our web page. The document object can be accessed with a window.document or just
+                document.</td>
+            <td>The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame
+                that displays the contents of the webpage. Whenever a window appears on the screen to display the
+                contents of the document, the window object is created.</td>
+        </tr>
+        <tr>
+
+            <td><b>Syntax for property: </b><br>document.property_name;</td>
+            <td><b>Syntax for property: </b><br> window.property_name;</td>
+
+        </tr>
+        <tr>
+            <td><b>Properties of the document:</b> activeElement, body, anchors, baseURI, cookie, doctype, URL, forms,
+                title, head, links, images, etc.</td>
+            <td><b>Properties of the window: </b> Closed, console, controllers, crypto, devicePixelRatio, Document,
+                DOMMatrix, frames[], History, fullScreen, Location, etc.</td>
+        </tr>
+        <tr>
+            <td><b>Syntax for method: </b><br>document.method_name;</td>
+            <td><b>Syntax for method: </b><br> window.method_name;</td>
+        </tr>
+        <tr>
+            <td><b>Methods of the document: </b>addEventListener(), adoptNode(), close(), createAttribute(),
+                createComment(), createDocumentFragment(), createElement(), createEvent(), etc.</td>
+            <td><b>Methods of the window: </b>alert(), atob(), blur(), btoa(), clearInterval(), clearTimeout(), close(),
+                focus(), confirm(), getComputedStyle(), matchMedia(), etc.</td>
+        </tr>
+        <tr>
+            <td>It represents any HTML document or web page that is loaded in the browser.</td>
+            <td>It represents a browser window or frame that displays the contents of the webpage</td>
+        </tr>
+        <tr>
+            <td>It is loaded inside the window</td>
+            <td>It is the very first object that is loaded in the browser.</td>
+        </tr>
+        <tr>
+            <td>
+                It is the object of window property.
+            </td>
+            <td>
+                It is the object of the browser.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                All the tags, elements with attributes in HTML are part of the document.
+            </td>
+            <td>
+                Global objects, functions, and variables of JavaScript are members of the window object
+            </td>
+        </tr>
+        <tr>
+            <td>
+                We can access the document from a window using the window. document
+            </td>
+            <td>
+                We can access the window from the window only. i.e. window.window
+            </td>
+        </tr>
+        <tr>
+            <td>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like
+                this window. document.title</td>
+            <td>Properties of the window object cannot be accessed by the document object</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
